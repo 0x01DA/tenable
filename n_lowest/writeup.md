@@ -1,6 +1,9 @@
-#include <iostream>
+# Print N Lowest Numbers
 
+Write C programm that prints the n lowest numbers from a given list of numbers
+that come via stdin input.
 
+```
 void swap(int *xp, int *yp) {
     int temp = *xp; 
     *xp = *yp; 
@@ -27,17 +30,4 @@ void PrintNLowestNumbers(int arr[], unsigned int length, unsigned short nLowest)
     printf("%d ", arr[i]);
   }
 }
-
-int main(void) {
-	char input[0x100];
-	int integerList[0x100];
-	unsigned int length;
-	unsigned short nLowest;
-	std::cin >> nLowest;
-	std::cin >> length;
-	for (int i=0;i<length;i++)
-		 std::cin >> integerList[i];
-	PrintNLowestNumbers(integerList, length, nLowest);
-}
-
-
+```
